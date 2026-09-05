@@ -27,12 +27,19 @@ jobs:
 
       - name: Install Jupyter Book
         run: |
-          pip install jupyter-book sphinx-book-theme
-          pip install myst-parser
+          pip install "jupyter-book==1.0.4.post1" "sphinx-book-theme==1.1.0" myst-parser
+
+      - name: Fix sphinx_thebe bug
+        run: |
+          SITE_PACKAGES=$(python -c "import site; print(site.getsitepackages()[0])")
+          THEBE_INIT="$SITE_PACKAGES/sphinx_thebe/__init__.py"
+          if [ -f "$THEBE_INIT" ]; then
+            sed -i 's/    cm_language = kernel_name$/    cm_language = kernel_name or "python3"/' "$THEBE_INIT"
+          fi
 
       - name: Build the book
         run: |
-          jb build --html .
+          python -m jupyter_book build .
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
