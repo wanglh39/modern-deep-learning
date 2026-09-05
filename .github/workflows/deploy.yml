@@ -35,11 +35,13 @@ jobs:
           THEBE_INIT="$SITE_PACKAGES/sphinx_thebe/__init__.py"
           if [ -f "$THEBE_INIT" ]; then
             sed -i 's/    cm_language = kernel_name$/    cm_language = kernel_name or "python3"/' "$THEBE_INIT"
+            echo "Fixed sphinx_thebe bug"
           fi
 
       - name: Build the book
         run: |
-          python -m jupyter_book build .
+          JB_PATH=$(python -c "import sys; print(sys.prefix)")/bin/jb
+          $JB_PATH build .
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
