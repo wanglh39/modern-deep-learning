@@ -18,5 +18,8 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 
+# Jupyter Book build output
+_build/
+
 # Data (if added later)
 data/

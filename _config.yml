@@ -1,0 +1,57 @@
+# Jupyter Book 配置
+title: 现代深度学习
+author: 现代深度学习教学项目
+copyright: "2026"
+logo: ""
+
+# 执行控制：不在构建时执行 notebook（已有输出）
+execute:
+  execute_notebooks: "off"
+
+# HTML 输出配置
+html:
+  use_repository_button: true
+  use_edit_page_button: true
+  use_issues_button: true
+  baseurl: ""
+
+# 仓库信息
+repository:
+  url: https://github.com/wanglh39/modern-deep-learning
+  path_to_book: ""
+  branch: main
+
+# LaTeX 解析
+parse:
+  myst_enable_extensions:
+    - dollarmath
+    - amsmath
+    - deflist
+    - html_image
+    - colon_fence
+    - smartquotes
+    - linkify
+
+# Sphinx 配置：显式指定扩展列表，排除 sphinx_thebe
+sphinx:
+  extensions:
+    - sphinx_togglebutton
+    - sphinx_copybutton
+    - myst_nb
+    - jupyter_book
+    - sphinx_comments
+    - sphinx_external_toc
+    - sphinx.ext.intersphinx
+    - sphinx_design
+    - sphinx_book_theme
+  config:
+    html_theme: sphinx_book_theme
+    html_theme_options:
+      repository_url: https://github.com/wanglh39/modern-deep-learning
+      repository_branch: main
+      path_to_docs: ""
+      use_repository_button: true
+      use_edit_page_button: true
+      use_issues_button: true
+    language: zh_CN
+    html_last_updated_fmt: "%Y-%m-%d"

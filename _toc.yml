@@ -1,0 +1,162 @@
+format: jb-book
+root: intro
+
+chapters:
+  - file: notebooks/01_mlp_backprop
+    title: "01 — MLP + 反向传播 + 计算图"
+  - file: notebooks/02_autograd_optimizers
+    title: "02 — 自动微分 + 优化器演进"
+  - file: notebooks/03_normalization_activation
+    title: "03 — 归一化 + 激活函数 + 初始化"
+  - file: notebooks/04_positional_encoding
+    title: "04 — 位置编码（绝对→RoPE→ALiBi）"
+  - file: notebooks/05_generalization_theory
+    title: "05 — 泛化理论 + 双下降"
+  - file: notebooks/06_cnn_vs_vit
+    title: "06 — CNN ↔ ViT 对比"
+  - file: notebooks/07_rnn_vs_transformer
+    title: "07 — RNN/LSTM ↔ Transformer 对比"
+  - file: notebooks/08_architecture_innovations
+    title: "08 — 架构创新（MoE/Mamba/GQA）"
+
+  - file: notebooks/09_tokenization
+    title: "09 — Tokenization（BPE/Unigram）"
+  - file: notebooks/10_pretraining_scaling
+    title: "10 — 预训练 + Scaling Law"
+  - file: notebooks/11_sft_peft
+    title: "11 — SFT + LoRA/QLoRA"
+  - file: notebooks/12_rlhf_ppo
+    title: "12 — RLHF + PPO"
+  - file: notebooks/13_dpo_family
+    title: "13 — DPO → GRPO → DAPO"
+  - file: notebooks/14_data_engineering
+    title: "14 — 数据工程 + 自我改进"
+  - file: notebooks/15_training_techniques
+    title: "15 — 训练技巧（调度/累积/裁剪）"
+  - file: notebooks/16_model_merging
+    title: "16 — 模型合并（TIES/DARE/SLERP）"
+  - file: notebooks/17_retrieval_augmented_training
+    title: "17 — 检索增强训练"
+  - file: notebooks/18_non_gradient_optimization
+    title: "18 — 非梯度优化（ES/进化/NAS）"
+
+  - file: notebooks/19_reasoning_models
+    title: "19 — 推理模型（o1/R1/test-time scaling）"
+  - file: notebooks/20_prm_process_reward
+    title: "20 — PRM 过程奖励模型"
+  - file: notebooks/21_inference_time_methods
+    title: "21 — 推理时方法（best-of-N/self-consistency）"
+  - file: notebooks/22_long_context
+    title: "22 — 长上下文 + Ring Attention"
+
+  - file: notebooks/23_clip_blip
+    title: "23 — CLIP / BLIP 多模态对齐"
+  - file: notebooks/24_vlm
+    title: "24 — VLM 原生多模态"
+  - file: notebooks/25_world_models_video
+    title: "25 — Sora / 视频生成 / 世界模型"
+  - file: notebooks/26_3d_representation
+    title: "26 — NeRF / 3D Gaussian Splatting"
+  - file: notebooks/27_embodied_ai
+    title: "27 — VLA / RT-2 / 机器人"
+  - file: notebooks/28_embodied_simulation
+    title: "28 — 仿真环境（Isaac Gym/Habitat）"
+  - file: notebooks/29_speech_audio
+    title: "29 — 语音（ASR/TTS/Whisper）"
+
+  - file: notebooks/30_contrastive_learning
+    title: "30 — 对比学习（SimCLR/MoCo）"
+  - file: notebooks/31_non_contrastive_ssl
+    title: "31 — 非对比自监督（BYOL/DINO）"
+  - file: notebooks/32_embedding_retrieval
+    title: "32 — Embedding + 向量检索"
+
+  - file: notebooks/33_ddpm
+    title: "33 — DDPM + DDIM"
+  - file: notebooks/34_stable_diffusion
+    title: "34 — Stable Diffusion"
+  - file: notebooks/35_controlnet
+    title: "35 — ControlNet / IP-Adapter"
+  - file: notebooks/36_flow_matching
+    title: "36 — Flow Matching"
+  - file: notebooks/37_consistency_models
+    title: "37 — 一致性模型"
+  - file: notebooks/38_dit
+    title: "38 — DiT 扩散 Transformer"
+  - file: notebooks/39_vae_gan_flow
+    title: "39 — VAE / GAN / Normalizing Flow"
+  - file: notebooks/40_autoregressive_vs_diffusion
+    title: "40 — 自回归 vs 扩散对比"
+
+  - file: notebooks/41_distillation_quantization
+    title: "41 — 蒸馏 + 量化"
+  - file: notebooks/42_pruning_moe
+    title: "42 — 剪枝 + 稀疏化 + MoE"
+  - file: notebooks/43_paged_attention_serving
+    title: "43 — PagedAttention + Serving"
+  - file: notebooks/44_inference_acceleration
+    title: "44 — 推理加速（KV cache/FlashAttention）"
+  - file: notebooks/45_distributed_training
+    title: "45 — 分布式训练（DDP/FSDP）"
+  - file: notebooks/46_edge_deployment
+    title: "46 — 边缘部署（WebGPU/ONNX）"
+
+  - file: notebooks/47_alignment
+    title: "47 — 对齐（Constitutional AI）"
+  - file: notebooks/48_safety_jailbreak
+    title: "48 — 安全 + 越狱防御"
+  - file: notebooks/49_adversarial_robustness
+    title: "49 — 对抗鲁棒性"
+  - file: notebooks/50_ood_calibration
+    title: "50 — OOD 检测 + 校准"
+  - file: notebooks/51_evaluation
+    title: "51 — 评估 + Benchmark"
+
+  - file: notebooks/52_agent_foundations
+    title: "52 — Agent 基础（ReAct/ToT/GoT）"
+  - file: notebooks/53_tool_use_mcp
+    title: "53 — Tool Use + MCP 协议"
+  - file: notebooks/54_context_engineering
+    title: "54 — 上下文工程"
+  - file: notebooks/55_rag_agentic
+    title: "55 — RAG / Agentic RAG / GraphRAG"
+  - file: notebooks/56_memory_systems
+    title: "56 — 记忆系统"
+  - file: notebooks/57_multi_agent_frameworks
+    title: "57 — 多 Agent 框架"
+  - file: notebooks/58_coding_agents
+    title: "58 — 代码 Agent"
+  - file: notebooks/59_computer_use
+    title: "59 — Computer Use / Browser Use"
+  - file: notebooks/60_agent_evaluation
+    title: "60 — Agent 评估"
+
+  - file: notebooks/61_time_series_models
+    title: "61 — 时序模型（PatchTST/iTransformer）"
+  - file: notebooks/62_time_series_foundation
+    title: "62 — 时序基础模型（TimesFM/Chronos）"
+
+  - file: notebooks/63_alphafold
+    title: "63 — AlphaFold"
+  - file: notebooks/64_protein_design
+    title: "64 — 蛋白质设计（RFdiffusion）"
+  - file: notebooks/65_molecule_pinn
+    title: "65 — 分子生成 + PINN"
+  - file: notebooks/66_materials_discovery
+    title: "66 — 材料发现（GNoME）"
+  - file: notebooks/67_weather_climate
+    title: "67 — 天气预测（GraphCast/Pangu）"
+  - file: notebooks/68_automated_discovery
+    title: "68 — 自动发现（AlphaProof/AlphaEvolve）"
+
+  - file: notebooks/69_sae_interpretability
+    title: "69 — 稀疏自编码器（SAE）"
+  - file: notebooks/70_representation_engineering
+    title: "70 — 表征工程（RepE）"
+  - file: notebooks/71_probing_attribution
+    title: "71 — 探针 + 归因"
+
+  - file: notebooks/72_deep_rl_frontiers
+    title: "72 — 深度 RL 前沿（AlphaGo/多智能体）"
+  - file: notebooks/73_gnn
+    title: "73 — 图神经网络（GCN/GAT/Graph Transformer）"
